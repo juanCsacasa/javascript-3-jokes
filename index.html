@@ -3,16 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=10">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <button id="randomjoke">Chistaco aleatorio</button>
-  <div id="search">
-    <input type="text" id="search-input">
-    <button id="search-joke">Buscar</button>
+  <div class="jokes-container">
+    <div class="image-container">
+      <img src="./img/dad.jpeg" alt="dad" class="image-container__dad">
+    </div>
+    <button id="randomjoke" class="jokes-btn">Chistaco aleatorio</button>
+    <div id="search">
+      <input type="text" id="search-input">
+      <button id="search-joke" class="jokes-btn">Buscar</button>
+    </div>
+    <ul id="jokesList" class="jokelist"></ul>
   </div>
-  <ul id="jokesList"></ul>
 </body>
   <script type="module" src="script.js"></script>
 </html>
