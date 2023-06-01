@@ -1,0 +1,50 @@
+[
+  {
+    "title" : "Black Shirt with Joke",
+    "color" : "black",
+    "price" : "$13",
+    "img" : "img/camisas_negras.jpeg"
+  },
+  {
+    "title" : "White Shirt with Joke",
+    "color" : "white",
+    "price" : "$10",
+    "img" : "img/camisas_blancas.jpeg"
+  },
+  {
+    "title" : "Black Case with Joke",
+    "color" : "black",
+    "price" : "$7",
+    "img" : "img/case_negro.jpeg"
+  },
+  {
+    "title" : "White Case with Joke",
+    "color" : "white",
+    "price" : "$5",
+    "img" : "img/case_blanco.jpeg"
+  },
+  {
+    "title" : "Black Poster with Joke",
+    "color" : "black",
+    "price" : "$5",
+    "img" : "img/poster_negro.jpeg"
+  },
+  {
+    "title" : "White Poster with Joke",
+    "color" : "white",
+    "price" : "$3",
+    "img" : "img/poster_blanco.jpeg"
+  },
+  {
+    "title" : "Black Almohada with Joke",
+    "color" : "black",
+    "price" : "$15",
+    "img" : "img/almohada_negra.jpeg"
+  },
+  {
+    "title" :"White Almohada with Joke",
+    "color" : "white",
+    "price" : "$13",
+    "img" : "img/almohada_blanca.jpeg"
+  }
+]

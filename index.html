@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=10">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 <body>
@@ -12,13 +12,14 @@
     <div class="image-container">
       <img src="./img/dad.jpeg" alt="dad" class="image-container__dad">
     </div>
-    <button id="randomjoke" class="jokes-btn">Chistaco aleatorio</button>
-    <div id="search">
-      <input type="text" id="search-input">
-      <button id="search-joke" class="jokes-btn">Buscar</button>
-    </div>
+    <button id="randomjoke" class="jokes-btn" type="button">Chistaco aleatorio</button>
+    <a href="produc.html" id="jokepharagraf"></a>
+    <form id="search">
+      <input type="text" id="search-input" required>
+      <button id="search-joke" class="jokes-btn" type="submit">Buscar</button>
+    </form>
     <ul id="jokesList" class="jokelist"></ul>
   </div>
 </body>
-  <script type="module" src="script.js"></script>
+  <script type="module" src="./javascript/main.js"></script>
 </html>

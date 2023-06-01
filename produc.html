@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main class="container">
+    <div class="container-product">
+      <div class="container-product__image">
+        <img src="img/camisas_negras.jpeg" alt="product" class="container-image" id="product-image">
+      </div>
+      <form class="container-product__buttons">
+        <div>
+          <label for="btnwhite"></label>
+          <input type="radio" id="btnwhite" name="color" value="white" class="radiobtn"/>
+          <label for="btnblack"></label>
+          <input type="radio" id="btnblack" name="color" value="black" class="radiobtn"/>
+        </div>
+      </form>
+    </div>
+    <div class="container-text">
+      <div class="container-text__details">
+        <h1 id="title">Black Shirt with Joke</h1>
+        <p id="price">$25</p>
+        <p id="jokeselect"></p>
+      </div>
+      <div class="container-text__joke">
+        <button id="randomjoke" class="jokes-btn" type="button">Chistaco aleatorio</button>
+        <a href="produc.html" id="jokepharagraf"></a>
+      </div>
+    </div>
+  </main>
+</body>
+  <script type="module" src="./javascript/main.js"></script>
+  <script type="module" src="main2.js"></script>
+</html>
