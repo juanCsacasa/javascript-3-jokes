@@ -1,25 +1,20 @@
-// import { obtenerDatos } from "./javascript/productpage/apiproduct.js";
+import { selectedJoke,idSelected } from "./javascript/jokeModule.js";
+import{createProductButtons} from "./javascript/productpage/productimage.js"
+import { asifuncionanlosmodulos, changeElement} from "./javascript/productpage/productchangecolor.js";
 
-// obtenerDatos();
+createProductButtons();
 
-// import { Producto } from './javascript/productpage/colorschange.js';
-// import { Observador } from './javascript/productpage/observer.js';
-// import { VistaProducto } from './javascript/productpage/publisher.js';
+const jokeElements = document.querySelectorAll('.joke-shirt');
+const getUrl = new URLSearchParams(window.location.search);
+let id = getUrl.get('id');
+jokeElements.forEach(element => element.textContent = id);
+const x = await idSelected(id);
+selectedJoke(x);
 
-// const producto = new Producto();
-// const observador = new Observador();
-// const vistaProducto = new VistaProducto(producto);
+const randomJoke = document.getElementById('jokepharagraf');
+randomJoke.addEventListener('click', function() {
+  jokeElements.forEach(element => element.textContent = randomJoke.textContent)
+});
 
-// producto.setObservador(observador);
-// observador.subscribe(vistaProducto);
 
-// const btnWhite = document.getElementById('btnwhite');
-// const btnBlack = document.getElementById('btnblack');
-
-// btnWhite.addEventListener('click', () => {
-//   producto.setColor('white');
-// });
-
-// btnBlack.addEventListener('click', () => {
-//   producto.setColor('black');
-// });
+asifuncionanlosmodulos();

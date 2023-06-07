@@ -5,7 +5,7 @@ export async function random(apiurl) {
   const data = await fetchdata(apiurl);
   const jokerandom = document.getElementById("jokepharagraf")
   jokerandom.textContent = data.joke;
-  jokerandom.href = `produc.html?id=${data.id}`;
+  jokerandom.href = `produc.html?id=${data.joke}`;
 }
 
 //esta funcion busca una lista de chistes
@@ -31,4 +31,18 @@ export async function search() {
   } else {
     jokesList.innerHTML = '<li>No hubo resultados</li>';
   }
+}
+
+// Esta funcion busca por medio del id
+export async function selectedJoke(joke) {
+  const textone = document.getElementById("jokeshirt"); 
+  const texttwo = document.getElementById("jokeshirttwo");
+  textone.textContent = joke;
+  texttwo.textContent = joke;
+}
+
+export async function idSelected(apiid) {
+  const url = `https://icanhazdadjoke.com/j/${apiid}`;
+  const data = await fetchdata(url);
+  return data.joke;
 }

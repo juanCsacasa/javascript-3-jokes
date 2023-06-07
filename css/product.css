@@ -1,7 +1,17 @@
-.container{
+.container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.other-products{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.joke-shirt{
+  width: 300px;
 }
 
 .container-product__image {
@@ -10,16 +20,32 @@
 }
 
 .container-image {
+  width: 50px;
+  height: 50px;
+}
+
+.product-color{
   width: 100%;
   height: 100%;
 }
 
-.container-text__joke{
+.container-text__joke {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
 
-.radiobtn{
+.radiobtn {
   width: 20px;
   height: 20px;
 }
+
+.other-products {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image__detail {
+  width: 200px;
+  height: 250px;
+}
+
