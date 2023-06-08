@@ -1,12 +1,12 @@
 import { observerP} from './productobserver.js';
 import { elements } from '../config/object.js';
 
-// me da la imagen en la posicion que la queiero
+// Me da la imagen en la posicion que la queiero
 const defaultImages = [
-  elements[0], // Primera imagen
-  elements[2], // Segunda imagen
-  elements[4], // Tercera imagen
-  elements[6]  // Cuarta imagen
+  elements[0],
+  elements[2],
+  elements[4],
+  elements[6]
 ];
 
 // Crear una instancia del observador

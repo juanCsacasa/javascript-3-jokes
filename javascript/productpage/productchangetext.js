@@ -3,9 +3,11 @@ import { random } from "../jokeModule.js";
 
 const apiurl = 'https://icanhazdadjoke.com/';
 
+//se crea el nuevo observador
 const jokeObservers = new JokeObserver();
 const text = new observerP();
 
+//lo manejamos por medio del query selector all para que me edite los elementos con la misma clase
 const jokeElements = document.querySelectorAll('.joke-shirt');
 
 
@@ -14,6 +16,7 @@ const render = async () => {
   text.changeElement(newJoke);
 };
 
+//tenemos el evento del boton.
 document.getElementById('randomjoke').addEventListener('click', render);
 
 jokeElements.forEach((element) => {
