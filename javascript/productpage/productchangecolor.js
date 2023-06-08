@@ -20,10 +20,9 @@ const radioButtons = document.getElementsByName('color');
 }
 
 export function changeElement(newElement, title) {
-  // Encontrar el producto con el color seleccionado
+  // Encontrar el producto con el color seleccionado y posicion
   const selectedProduct = elements.find(product => product.color !== newElement && product.title === title);
   let posicion = elements.indexOf(selectedProduct);
-  console.log(posicion, selectedProduct);
   if (newElement == "white") {
     posicion++;
   } else {

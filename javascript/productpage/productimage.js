@@ -1,7 +1,7 @@
 import { observerP} from './productobserver.js';
 import { elements } from '../config/object.js';
 
-// Definir las imágenes que quieres que aparezcan por defecto
+// me da la imagen en la posicion que la queiero
 const defaultImages = [
   elements[0], // Primera imagen
   elements[2], // Segunda imagen
