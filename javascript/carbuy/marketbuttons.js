@@ -12,5 +12,4 @@ export function name() {
     cardProduct.classList.remove('hidden-cart');
   });
 
-  cardProduct.classList.add('hidden-cart');
 };

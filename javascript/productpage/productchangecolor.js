@@ -1,15 +1,13 @@
-import { observerP, JokeObserver} from './productobserver.js';
+import { observerP, JokeObserver } from './productobserver.js';
 import { elements } from '../config/object.js';
 
 const observer = new observerP();
-
-// Crear instancia del observador de chistes
 const jokeObserver = new JokeObserver();
 observer.addObserver(jokeObserver);
 
 // Lógica para cambiar el elemento
 export function asifuncionanlosmodulos() {
-const radioButtons = document.getElementsByName('color');
+  const radioButtons = document.getElementsByName('color');
   radioButtons.forEach(radioButton => {
     radioButton.addEventListener('click', () => {
       const color = radioButton.value;
@@ -26,7 +24,7 @@ export function changeElement(newElement, title) {
   //validacion que me dice que si el nuevo elemento es igual a blanco le sume uno a la posicion
   if (newElement == "white") {
     posicion++;
-  //sino que le reste uno a la posicion 
+    //sino que le reste uno a la posicion 
   } else {
     posicion--;
   }
