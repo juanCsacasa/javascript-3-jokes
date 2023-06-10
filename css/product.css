@@ -10,8 +10,18 @@
   justify-content: space-evenly;
 }
 
+.container-items{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 200px;
+  color: blue;
+  gap: 95px;
+  left: 300px;
+}
+
 .joke-shirt{
-  width: 300px;
+  width: 200px;
 }
 
 .container-product__image {
@@ -49,3 +59,21 @@
   height: 250px;
 }
 
+/* card */
+.card{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-icon{
+  width: 40px;
+  height: 40px;
+}
+
+.hidden-cart{
+  background-color: rgb(237, 193, 193);
+  width: 300px;
+  height: 500px;
+  position: absolute;
+}
