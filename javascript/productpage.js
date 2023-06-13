@@ -1,7 +1,7 @@
-import { selectedJoke, idSelected } from "./javascript/jokeModule.js";
-import { createProductButtons } from "./javascript/productpage/productimage.js"
-import { asifuncionanlosmodulos, changeElement } from "./javascript/productpage/productchangecolor.js";
-import { name } from "./javascript/carbuy/marketbuttons.js";
+import { selectedJoke, idSelected } from "./jokeModule.js";
+import { createProductButtons } from "./productpage/productimage.js";
+import { asifuncionanlosmodulos, changeElement } from "./productpage/productchangecolor.js";
+import { name } from "./carbuy/marketbuttons.js";
 
 createProductButtons();
 name();

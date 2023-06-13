@@ -1,4 +1,3 @@
-//funcion que desplega el card que esta en el header
 export function name() {
   const cardOpenBtn = document.getElementById('card-open');
   const cardCloseBtn = document.getElementById('card-close');
