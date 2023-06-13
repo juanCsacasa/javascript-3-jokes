@@ -10,12 +10,27 @@
   justify-content: space-evenly;
 }
 
+.container-product{
+  position: relative;
+}
+
 .container-items {
   display: flex;
   align-items: center;
   color: blue;
   gap: 95px;
-  left: 300px;
+  position: absolute;
+  top: 250px;
+}
+
+.product{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.cart-image{
+  width: 100px;
+  height: 150px;
 }
 
 .joke-shirt {
@@ -74,4 +89,5 @@
   width: 300px;
   height: 500px;
   position: absolute;
+  display: none;
 }

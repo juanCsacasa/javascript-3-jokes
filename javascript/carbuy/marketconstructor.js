@@ -10,15 +10,57 @@ class market {
   }
 }
 
-const productContainer = document.querySelector('.card-product');
-const cartItemsContainer = document.querySelector('.cart-items');
-// Variable para almacenar los productos seleccionados
-const cartItems = [];
+let currentProductIndex = 6;
 
-function addProduct() {
-  productContainer.innerHTML = " "; 
+const addToCartButton = document.getElementById('add-cart');
+addToCartButton.addEventListener('click', addToCart);
 
-  elements.forEach((product) =>{
-    const product = new market (element.title, element.color, element.price, element.img, element.id);
-  })
+function addToCart(event) {
+  const selectedProductIndex = event.target.getAttribute('data-product-index');
+
+  const selectedProduct = new market(
+    elements[selectedProductIndex].title,
+    elements[selectedProductIndex].color,
+    elements[selectedProductIndex].price,
+    elements[selectedProductIndex].img,
+    elements[selectedProductIndex].id
+  );
+
+  const productElement = document.createElement('div');
+  productElement.classList.add('product');
+  productElement.innerHTML = `
+    <div class="select-product">
+      <h3>${selectedProduct.title}</h3>
+      <p>Color: ${selectedProduct.color}</p>
+      <p>Price: ${selectedProduct.price}</p>
+      <button class="remove-product">Remove</button>
+    </div>
+    <img src="${selectedProduct.img}" alt="${selectedProduct.title}" class="cart-image" />
+  `;
+
+  const cartContainer = document.querySelector('.hidden-cart');
+  cartContainer.appendChild(productElement);
+  currentProductIndex++;
+  if (currentProductIndex === elements.length) {
+    currentProductIndex = 0;
+  }
+
+  const removeButton = productElement.querySelector('.remove-product');
+  removeButton.addEventListener('click', () => {
+    productElement.remove();
+  });
+
+  const removeAllButton = document.getElementById('remove-all');
+  removeAllButton.addEventListener('click', removeAllFromCart);
 }
+
+
+function removeAllFromCart() {
+  const cartContainer = document.querySelector('.hidden-cart');
+  const products = cartContainer.querySelectorAll('.product');
+  products.forEach((product) => {
+    product.remove();
+  });
+}
+
+addToCartButton.setAttribute('data-product-index', currentProductIndex);
